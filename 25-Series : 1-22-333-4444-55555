@@ -1,3 +1,7 @@
+/*This C program prints a special series in which nth terms is "nnnn..n times"
+example 
+1 22 333 4444 55555 666666 .... so on
+*/
 #include<stdio.h>
 
 int main() {
