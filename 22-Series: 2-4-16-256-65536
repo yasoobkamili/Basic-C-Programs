@@ -1,18 +1,15 @@
 //This C program prints series 2 4 16 256 ... upto n terms
 #include <stdio.h>
-#include<math.h>
 
 int main() {
  int i,n;
-  long long int ans;
-  ans=2;
+  long long int ans =2;
   printf("enter n");
   scanf("%d",&n);
-  printf("2 ");
   for(i=1;i<=n;i++)
     {
-      ans=pow(ans,2);
       printf("%lld ",ans);  
+      ans *= ans;
     }
   return 0;
 }
