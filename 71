@@ -1,0 +1,44 @@
+//C program to calculate and return square of number in same datatype as entered by the user using functions
+#include<stdio.h>
+void sq_int(){
+    int x;
+    printf("Enter input");
+    scanf("%d",&x);
+    printf("square is %d",x*x);
+    
+}
+void sq_float(){
+    float x;
+    printf("Enter input");
+    scanf("%f",&x);
+    printf("square is %f",x*x);
+    
+}
+void sq_double(){
+    double x;
+    printf("Enter input");
+    scanf("%lf",&x);
+    printf("square is %lf",x*x);
+}
+int main(){
+    int y ;
+    printf("ënter 1 for int input , 2 for float , 3 for double");
+    scanf("%d",&y);
+    switch(y){
+        case 1:
+            sq_int();
+            break;
+        case 2:
+            sq_float();
+            break;
+        case 3:
+            sq_double();
+            break;
+        default:
+            printf("invalid choice");
+            break;
+
+    }
+
+    return 0;
+}
